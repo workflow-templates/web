@@ -40,5 +40,5 @@ module.exports = {
   },
   filters: {},
   completeMessage:
-    'To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\n'
+    'You can edit your code ASAP!\n\n Enjoy your life!~~'
 };
