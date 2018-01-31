@@ -1,9 +1,14 @@
 import "../css/index.scss";
-let loading = require('../../common/utils/loading/index');
+import Loading from '../../common/utils/loading/index';
 {{#analytics}}
-let logger = require('../../common/utils/logger/index');
+import Logger from '../../common/utils/logger/index';
 {{/analytics}}
-loading.init({title:'Loading...',txt:''});
+let loading = new Loading({
+  msg: {
+    title: { con: 'Loading...' },
+    txt: { con: '' }
+  }
+});
 loading.show();
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
